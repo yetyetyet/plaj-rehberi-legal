@@ -50,6 +50,12 @@ bilinçli olarak DEĞİŞTİRİLMEDİ; yayın gününde güncellenecek.
   Değişiklik Talepleri. Eski 7-10 → 12-15 olarak yeniden numaralandı.
 - (#12) Abonelik bölümüne cayma/dijital içerik istisnası TASLAK
   paragrafı ([DANIŞMAN] yer tutuculu).
+- (Gelir modeli değişikliği, 2026-07-08) Yaz Sezonu Paketi satıştan
+  kaldırıldı; §5 haftalık + AYLIK abonelik olarak güncellendi, sezon
+  maddesi çıkarıldı ("Koy Pusulası" → "Sahil Pusulası" adı da düzeltildi).
+  gizlilik.html satın alma kalemi de "haftalık veya aylık abonelik"
+  olarak güncellendi. Paket gelecek yıl kampanya olarak dönerse madde
+  geri eklenecek.
 
 ## Danışmana Sorulacaklar
 
