@@ -19,6 +19,9 @@
   ul{margin:0 0 12px 20px;}
   li{margin-bottom:6px;}
   a{color:var(--accent);}
+  table{width:100%;border-collapse:collapse;margin:0 0 12px;font-size:14px;}
+  th,td{text-align:left;padding:10px 12px;border:1px solid var(--line);vertical-align:top;}
+  th{background:#faf7f0;font-weight:600;}
   .footer{margin-top:28px;color:var(--ink2);font-size:13px;text-align:center;}
   .footer a{color:var(--ink2);}
   strong{color:var(--ink);}
@@ -35,19 +38,26 @@
     <p>Plaj Rehberi uygulaması ("Uygulama") <strong>Yunus Emre Tugay</strong> ("Veri Sorumlusu") tarafından geliştirilmekte ve işletilmektedir. Gizlilikle ilgili her türlü soru ve talebiniz için <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> adresine yazabilirsiniz.</p>
 
     <h2>2. Topladığımız Veriler</h2>
-    <p><strong>Hesap bilgileri:</strong> Kayıt olduğunuzda e-posta adresiniz, belirlediğiniz görünen ad ve şifreniz (şifreler geri döndürülemez biçimde şifrelenmiş olarak saklanır) işlenir. Apple ile Giriş kullanırsanız Apple'ın bize ilettiği kimlik bilgisi ve (izin verdiyseniz) ad ve e-posta bilgisi işlenir.</p>
-    <p><strong>Konum bilgisi:</strong> Konum izni verirseniz konumunuz; size yakın plajları göstermek, mesafeleri hesaplamak ve sıralamaları kişiselleştirmek için kullanılır. Konumunuz sürekli takip edilmez; harita ve sıralama özellikleri için anlık olarak işlenir. Bir plaj için kalabalık raporu gönderdiğinizde, raporun o plajın yakınından gönderildiğini doğrulamak amacıyla yaklaşık konumunuz raporla birlikte kaydedilir.</p>
-    <p><strong>Kalabalık raporları:</strong> Gönderdiğiniz kalabalık seviyesi, rapor zamanı ve tekrarlı gönderimleri sınırlamak için rastgele üretilmiş bir cihaz tanımlayıcısı kaydedilir. Bu tanımlayıcı reklam kimliği değildir ve sizi kimliğinizle eşleştirmek için kullanılmaz.</p>
-    <p><strong>Satın alma bilgileri:</strong> Premium aboneliği veya Sezon Paketi satın aldığınızda ödeme Apple üzerinden gerçekleşir; kredi kartı bilgileriniz hiçbir zaman bize ulaşmaz. Aboneliğinizin durumu (aktif/pasif, bitiş tarihi) abonelik altyapı sağlayıcımız RevenueCat aracılığıyla işlenir.</p>
-    <p><strong>Favoriler ve kullanım verileri:</strong> Favorilere eklediğiniz plajlar hesabınızla ilişkilendirilir. Uygulamanın kararlılığını sağlamak için hata (çökme) kayıtları işlenebilir.</p>
+    <p><strong>Hesap bilgileri:</strong> Kayıt olduğunuzda e-posta adresiniz, görünen adınız (kendiniz belirlemezseniz e-posta adresinizin başındaki bölümden türetilir) ve şifreniz (şifreler geri döndürülemez biçimde özetlenmiş olarak saklanır; düz metin şifreniz bize ulaşmaz) işlenir. Oturumunuzu sürdürmek için kimlik doğrulama ve oturum bilgileri (oturum belirteçleri) işlenir. Apple ile Giriş kullanırsanız Apple'ın bize ilettiği kimlik bilgisi ve (izin verdiyseniz) ad ve e-posta bilgisi işlenir.</p>
+    <p><strong>Konum bilgisi:</strong> Konum izni verirseniz konumunuz; size yakın plajları göstermek, mesafeleri hesaplamak ve sıralamaları kişiselleştirmek için kullanılır. Konumunuz sürekli takip edilmez; harita ve sıralama özellikleri için anlık olarak işlenir. Bir plaj için kalabalık raporu gönderdiğinizde, raporun o plajın yakınından gönderildiğini doğrulamak amacıyla yaklaşık konumunuz (yaklaşık 1 km hassasiyete indirilerek) raporla birlikte kaydedilir.</p>
+    <!-- [DANIŞMAN #15/#19]: Girişsiz akışlar (kalabalık raporu, işletme talebi) kayıt
+         rızasının dışında kalıyor — bu akışlarda konumun/verinin işlenmesinin hukuki
+         sebebi nedir (açık rıza mı, meşru menfaat mi)? Konumun hukuki sebebi cümlesi
+         danışman görüşüne göre güncellenecek; şimdilik mevcut ifade korunuyor. -->
+    <p><strong>Kalabalık raporları:</strong> Gönderdiğiniz kalabalık seviyesi, rapor zamanı ve tekrarlı gönderimleri sınırlamak için rastgele üretilmiş bir cihaz tanımlayıcısı kaydedilir. Bu tanımlayıcı reklam kimliği değildir; yalnızca kötüye kullanımın önlenmesi (gönderim sıklığı sınırı) için işlenir, kimlik verilerinizden ayrı tutulur ve kimliğinizle ilişkilendirilmez.</p>
+    <p><strong>Koy önerileri ve fotoğraflar:</strong> "Koy Öner" özelliğini kullandığınızda gönderdiğiniz koy bilgileri (ad, konum, tür, olanaklar, açıklama) ve fotoğraflar işlenir; öneri hesabınızla ilişkilendirilir. Fotoğraflar ve öneri içeriği, onaylanana kadar <strong>erişime kapalı (özel)</strong> olarak saklanır ve yalnızca inceleme amacıyla görüntülenir; önerinizin onaylanması hâlinde Uygulama içinde <strong>herkese açık</strong> olarak yayımlanır. Onaylanan ilk önerinize tanımlanan ödül (1 ay Premium), hesabınızda ödül kaydı olarak tutulur.</p>
+    <p><strong>İşletme ve değişiklik talepleri:</strong> Bir plaj kaydı için "İşletme Sahibiyim / Değişiklik Öner" formunu doldurduğunuzda ad-soyadınız, e-posta adresiniz, (isterseniz) telefon numaranız, talep notunuz ve talebin ilgili olduğu koy bilgisi; talebinizin değerlendirilmesi ve size dönüş yapılması amacıyla işlenir. Bu veriler Supabase altyapısında saklanır ve talebin sonuçlandırılmasından sonra <strong>[DANIŞMAN: saklama süresi önerisi]</strong> boyunca tutulur.</p>
+    <p><strong>Satın alma bilgileri:</strong> Premium aboneliği (haftalık veya aylık) satın aldığınızda ödeme Apple üzerinden gerçekleşir; kredi kartı bilgileriniz hiçbir zaman bize ulaşmaz. Aboneliğinizin durumu (aktif/pasif, bitiş tarihi) abonelik altyapı sağlayıcımız RevenueCat aracılığıyla işlenir; aboneliğinizin hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir.</p>
+    <p><strong>Favoriler:</strong> Favorilere eklediğiniz plajlar hesabınızla ilişkilendirilir.</p>
 
     <h2>3. Verileri Hangi Amaçlarla Kullanıyoruz?</h2>
     <ul>
       <li>Hesabınızı oluşturmak, oturumunuzu yönetmek ve favorilerinizi saklamak,</li>
       <li>Yakınınızdaki plajları göstermek ve rüzgâr/kalabalık/mesafe temelli sıralamalar sunmak,</li>
       <li>Kalabalık raporlarının güvenilirliğini sağlamak (konum ve sıklık doğrulaması),</li>
+      <li>Koy önerilerini ve işletme/değişiklik taleplerini değerlendirmek, size dönüş yapmak,</li>
       <li>Premium erişim haklarınızı yönetmek,</li>
-      <li>Hataları tespit etmek ve Uygulamayı iyileştirmek,</li>
+      <li>Hizmetin güvenliğini ve kararlılığını sağlamak,</li>
       <li>Yasal yükümlülüklerimizi yerine getirmek.</li>
     </ul>
     <p>Verileriniz reklam amacıyla kullanılmaz ve üçüncü kişilere satılmaz.</p>
@@ -63,9 +73,47 @@
 
     <h2>5. Yurt Dışına Aktarım</h2>
     <p>Yukarıda sayılan hizmet sağlayıcıların sunucuları yurt dışında bulunabilir. Bu nedenle hesap, favori, rapor ve abonelik durumu verileriniz, hizmetin sunulabilmesi için yurt dışındaki sunucularda saklanabilir ve işlenebilir. Kayıt sırasında sunulan KVKK Aydınlatma Metni'nde bu aktarım ayrıca açıklanmaktadır.</p>
+    <!-- [DANIŞMAN #15/#19]: Girişsiz akışlar (kalabalık raporu, işletme talebi)
+         kayıt sırasındaki açık rızanın DIŞINDA kalıyor; bu akışlardaki veriler de
+         yurt dışındaki sunuculara gidiyor. KVKK m.9 mekanizması ne olmalı:
+         açık rıza mı, standart sözleşme mi? Cevaba göre bu bölüm güncellenecek. -->
 
     <h2>6. Saklama Süreleri</h2>
-    <p>Hesap verileriniz, hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde hesap bilgileriniz ve favorileriniz silinir. Kalabalık raporları kimliğinizle ilişkilendirilmediğinden anonim istatistik olarak tutulabilir. Yasal saklama yükümlülüğü doğuran kayıtlar, ilgili mevzuatın öngördüğü süre boyunca saklanır.</p>
+    <p>Verileriniz veri türüne göre aşağıdaki süreler boyunca saklanır:</p>
+    <table>
+      <tr><th>Veri Türü</th><th>Hesap Silindiğinde</th><th>Saklama Süresi</th></tr>
+      <tr>
+        <td>Profil (e-posta, görünen ad, onay kaydı)</td>
+        <td>Silinir</td>
+        <td>Hesap aktif olduğu sürece</td>
+      </tr>
+      <tr>
+        <td>Favoriler</td>
+        <td>Silinir</td>
+        <td>Hesap aktif olduğu sürece</td>
+      </tr>
+      <tr>
+        <td>Koy önerileri ve fotoğraflar</td>
+        <td>Yayımlanmış öneriler rehber içeriği olarak kalabilir; talep etmeniz hâlinde kaldırılır <strong>[DANIŞMAN: teyit]</strong></td>
+        <td><strong>[DANIŞMAN: süre önerisi]</strong></td>
+      </tr>
+      <tr>
+        <td>İşletme ve değişiklik talepleri</td>
+        <td>Hesaba bağlı değilse etkilenmez; talep üzerine silinir</td>
+        <td>Talep sonuçlandıktan sonra <strong>[DANIŞMAN: süre önerisi]</strong></td>
+      </tr>
+      <tr>
+        <td>Kalabalık raporları (anonim; hesaba bağlı değildir)</td>
+        <td>Etkilenmez — kimlikle ilişkilendirilmez</td>
+        <td>Anonim istatistik olarak <strong>[DANIŞMAN: süre önerisi]</strong></td>
+      </tr>
+      <tr>
+        <td>Satın alma kayıtları (abonelik durumu)</td>
+        <td>Profil kaydıyla birlikte silinir; Apple/RevenueCat nezdindeki kayıtlar kendi politikalarına tabidir</td>
+        <td>Yasal saklama yükümlülükleri saklı kalmak üzere <strong>[DANIŞMAN: süre önerisi]</strong></td>
+      </tr>
+    </table>
+    <p>Yasal saklama yükümlülüğü doğuran kayıtlar, ilgili mevzuatın öngördüğü süre boyunca saklanır.</p>
 
     <h2>7. Hesap Silme</h2>
     <p>Hesabınızı Uygulama içinden Profil bölümünü kullanarak silebilir veya <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> adresine e-posta göndererek silinmesini talep edebilirsiniz.</p>
@@ -74,7 +122,7 @@
     <p>Verileriniz aktarım sırasında şifrelenir (HTTPS) ve erişim, satır düzeyinde yetkilendirme kurallarıyla sınırlandırılır. Hiçbir sistemin tam güvenliği garanti edilemez; makul teknik ve idari tedbirler uygulanır.</p>
 
     <h2>9. Çocukların Gizliliği</h2>
-    <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.</p>
+    <p>Uygulama çocuklara yönelik değildir ve bilerek çocuklardan veri toplanmaz. İlgili mevzuatın öngördüğü hâllerde Uygulamanın kullanımı için veli veya vasi izni gerekir.</p>
 
     <h2>10. Haklarınız</h2>
     <p>Kişisel verilerinize ilişkin haklarınız ve başvuru yolları için <a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a>'ne bakabilirsiniz.</p>

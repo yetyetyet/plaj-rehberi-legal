@@ -41,7 +41,7 @@
     <table>
       <tr><th>Veri Kategorisi</th><th>İşlenme Amacı</th><th>Hukuki Sebep (KVKK m.5)</th></tr>
       <tr>
-        <td>Kimlik ve iletişim (ad, e-posta)</td>
+        <td>Kimlik ve iletişim (ad/görünen ad — belirtilmezse e-postadan türetilir, e-posta)</td>
         <td>Hesap oluşturma, kimlik doğrulama, favorilerin saklanması, sizinle iletişim</td>
         <td>Sözleşmenin kurulması ve ifası (m.5/2-c)</td>
       </tr>
@@ -50,10 +50,23 @@
         <td>Yakındaki plajların gösterilmesi, mesafe hesabı ve kişiselleştirilmiş sıralama; kalabalık raporlarının konum doğrulaması</td>
         <td>Açık rıza (cihaz konum izni; m.5/1) — izin vermezseniz bölge seçerek kullanmaya devam edebilirsiniz</td>
       </tr>
+      <!-- [DANIŞMAN #15/#19]: Konumun hukuki sebebi teyit edilecek. Girişsiz akışlar
+           (kalabalık raporu, işletme talebi) kayıt rızasının dışında — bu akışlarda
+           m.9 mekanizması ve hukuki sebep: açık rıza mı, standart sözleşme mi? -->
       <tr>
-        <td>İşlem güvenliği (cihaz tanımlayıcısı, kayıt zamanları, hata kayıtları)</td>
-        <td>Rapor kötüye kullanımının önlenmesi, hizmetin güvenliği ve kararlılığı</td>
+        <td>İşlem güvenliği (cihaz tanımlayıcısı, şifre özeti, oturum bilgileri, kayıt zamanları)</td>
+        <td>Kötüye kullanımın önlenmesi (gönderim sıklığı sınırı), hizmetin güvenliği ve kararlılığı. Cihaz tanımlayıcısı kimlik verilerinizden ayrı tutulur ve kimliğinizle ilişkilendirilmez</td>
         <td>Meşru menfaat (m.5/2-f)</td>
+      </tr>
+      <tr>
+        <td>Kullanıcı içeriği (koy önerileri: ad, konum, açıklama, fotoğraflar; ödül kaydı)</td>
+        <td>Önerinin değerlendirilmesi; onay öncesi erişime kapalı saklama, onay sonrası Uygulama içinde herkese açık yayımlama; katkı ödülünün yönetimi</td>
+        <td>Açık rıza (gönderim sırasındaki onay; m.5/1)</td>
+      </tr>
+      <tr>
+        <td>İşletme ve değişiklik talepleri (ad-soyad, e-posta, telefon — opsiyonel, talep notu, ilgili koy)</td>
+        <td>Talebin değerlendirilmesi ve size dönüş yapılması</td>
+        <td>Talebinize bağlı işlem — m.5/2-c <strong>[DANIŞMAN: hukuki sebep teyidi]</strong></td>
       </tr>
       <tr>
         <td>Müşteri işlem (abonelik/satın alma durumu)</td>
@@ -64,13 +77,26 @@
     <p>Ödeme kartı bilgileriniz tarafımızca işlenmez; ödemeler Apple tarafından gerçekleştirilir.</p>
 
     <h2>3. Kişisel Verilerin Aktarılması</h2>
-    <p>Verileriniz; barındırma, kimlik doğrulama ve abonelik yönetimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple) aktarılmaktadır. Yurt dışına aktarım, KVKK m.9 kapsamında, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
+    <p>Verileriniz; barındırma, kimlik doğrulama ve abonelik yönetimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple) aktarılmaktadır. Abonelik durumunuzun hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir. Yurt dışına aktarım, KVKK m.9 kapsamında, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
+    <!-- [DANIŞMAN #15/#19]: Girişsiz akışlar (kalabalık raporu, işletme talebi) kayıt
+         rızasının dışında kalıyor ama verileri yurt dışındaki sunuculara gidiyor.
+         m.9 mekanizması: açık rıza mı, standart sözleşme mi? Cevaba göre bu bölümün
+         hukuki sebep cümlesi güncellenecek; şimdilik mevcut ifade korunuyor. -->
 
     <h2>4. Toplama Yöntemi</h2>
     <p>Kişisel verileriniz; Uygulama üzerindeki kayıt ve kullanım süreçlerinde, cihazınızın sağladığı izinler çerçevesinde (konum servisi) ve satın alma altyapılarından gelen bildirimler yoluyla, otomatik yöntemlerle toplanır.</p>
 
     <h2>5. Saklama</h2>
-    <p>Verileriniz, işlenme amaçlarının gerektirdiği süre ve ilgili mevzuatta öngörülen zamanaşımı süreleri boyunca saklanır; süre sonunda silinir, yok edilir veya anonim hâle getirilir. Hesabınızı sildiğinizde hesabınıza bağlı veriler silinir.</p>
+    <p>Verileriniz, işlenme amaçlarının gerektirdiği süre ve ilgili mevzuatta öngörülen zamanaşımı süreleri boyunca saklanır; süre sonunda silinir, yok edilir veya anonim hâle getirilir. Veri türü bazında saklama koşulları:</p>
+    <table>
+      <tr><th>Veri Türü</th><th>Hesap Silindiğinde</th><th>Saklama Süresi</th></tr>
+      <tr><td>Profil (kimlik, iletişim, onay kaydı)</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
+      <tr><td>Favoriler</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
+      <tr><td>Koy önerileri ve fotoğraflar</td><td>Yayımlanmış öneriler rehber içeriği olarak kalabilir; talep üzerine kaldırılır <strong>[DANIŞMAN: teyit]</strong></td><td><strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
+      <tr><td>İşletme ve değişiklik talepleri</td><td>Hesaba bağlı değilse etkilenmez; talep üzerine silinir</td><td>Talep sonuçlandıktan sonra <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
+      <tr><td>Kalabalık raporları (anonim; hesaba bağlı değildir)</td><td>Etkilenmez — kimlikle ilişkilendirilmez</td><td>Anonim istatistik olarak <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
+      <tr><td>Satın alma kayıtları (abonelik durumu)</td><td>Profil kaydıyla silinir; Apple/RevenueCat kayıtları kendi politikalarına tabidir</td><td>Yasal yükümlülükler saklı kalmak üzere <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
+    </table>
 
     <h2>6. KVKK m.11 Kapsamındaki Haklarınız</h2>
     <ul>
@@ -85,7 +111,12 @@
     </ul>
 
     <h2>7. Başvuru</h2>
-    <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> adresine iletebilirsiniz. Başvurunuz, niteliğine göre en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.</p>
+    <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak aşağıdaki yöntemlerle iletebilirsiniz:</p>
+    <ul>
+      <li><strong>E-posta:</strong> <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> (Uygulama içindeki Profil &gt; Gizlilik bölümünden hazır şablonla da ulaşabilirsiniz),</li>
+      <li><strong>Yazılı başvuru (posta):</strong> <strong>[DANIŞMAN: tebligat adresi]</strong>.</li>
+    </ul>
+    <p>Başvurunuz, niteliğine göre en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.</p>
   </div>
 
   <div class="footer">
