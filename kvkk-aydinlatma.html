@@ -31,7 +31,7 @@
 <div class="wrap">
   <div class="eyebrow">Plaj Rehberi</div>
   <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
-  <div class="meta">6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca · Son güncelleme: 6 Temmuz 2026</div>
+  <div class="meta">6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca · Son güncelleme: 9 Temmuz 2026</div>
 
   <div class="card">
     <h2>1. Veri Sorumlusu</h2>
@@ -50,9 +50,6 @@
         <td>Yakındaki plajların gösterilmesi, mesafe hesabı ve kişiselleştirilmiş sıralama; kalabalık raporlarının konum doğrulaması</td>
         <td>Açık rıza (cihaz konum izni; m.5/1) — izin vermezseniz bölge seçerek kullanmaya devam edebilirsiniz</td>
       </tr>
-      <!-- [DANIŞMAN #15/#19]: Konumun hukuki sebebi teyit edilecek. Girişsiz akışlar
-           (kalabalık raporu, işletme talebi) kayıt rızasının dışında — bu akışlarda
-           m.9 mekanizması ve hukuki sebep: açık rıza mı, standart sözleşme mi? -->
       <tr>
         <td>İşlem güvenliği (cihaz tanımlayıcısı, şifre özeti, oturum bilgileri, kayıt zamanları)</td>
         <td>Kötüye kullanımın önlenmesi (gönderim sıklığı sınırı), hizmetin güvenliği ve kararlılığı. Cihaz tanımlayıcısı kimlik verilerinizden ayrı tutulur ve kimliğinizle ilişkilendirilmez</td>
@@ -66,7 +63,7 @@
       <tr>
         <td>İşletme ve değişiklik talepleri (ad-soyad, e-posta, telefon — opsiyonel, talep notu, ilgili koy)</td>
         <td>Talebin değerlendirilmesi ve size dönüş yapılması</td>
-        <td>Talebinize bağlı işlem — m.5/2-c <strong>[DANIŞMAN: hukuki sebep teyidi]</strong></td>
+        <td>Meşru menfaat (m.5/2-f) — talebin değerlendirilip sonuçlandırılması amacıyla; talebi formu göndererek tarafımıza ilettiğinizden işleme bu amaca dayanır</td>
       </tr>
       <tr>
         <td>Müşteri işlem (abonelik/satın alma durumu)</td>
@@ -77,11 +74,8 @@
     <p>Ödeme kartı bilgileriniz tarafımızca işlenmez; ödemeler Apple tarafından gerçekleştirilir.</p>
 
     <h2>3. Kişisel Verilerin Aktarılması</h2>
-    <p>Verileriniz; barındırma, kimlik doğrulama ve abonelik yönetimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple) aktarılmaktadır. Abonelik durumunuzun hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir. Yurt dışına aktarım, KVKK m.9 kapsamında, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
-    <!-- [DANIŞMAN #15/#19]: Girişsiz akışlar (kalabalık raporu, işletme talebi) kayıt
-         rızasının dışında kalıyor ama verileri yurt dışındaki sunuculara gidiyor.
-         m.9 mekanizması: açık rıza mı, standart sözleşme mi? Cevaba göre bu bölümün
-         hukuki sebep cümlesi güncellenecek; şimdilik mevcut ifade korunuyor. -->
+    <p>Verileriniz; barındırma, kimlik doğrulama ve abonelik yönetimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple) aktarılmaktadır. Abonelik durumunuzun hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir.</p>
+    <p>Yurt dışına aktarım KVKK m.9 kapsamında yürütülür: bu hizmet sağlayıcıların bulunduğu ülkeler bakımından Kişisel Verileri Koruma Kurulu'nca verilmiş bir yeterlilik kararı bulunmadığından aktarım, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Hesap gerektirmeyen akışlarda (kalabalık raporu, işletme/değişiklik talebi) işlenen veriler ise ya kimliğinizle ilişkilendirilmez (kalabalık raporları) ya da ilgili formu göndermeniz suretiyle vermiş olduğunuz açık rızaya dayanılarak bu sunuculara aktarılır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
 
     <h2>4. Toplama Yöntemi</h2>
     <p>Kişisel verileriniz; Uygulama üzerindeki kayıt ve kullanım süreçlerinde, cihazınızın sağladığı izinler çerçevesinde (konum servisi) ve satın alma altyapılarından gelen bildirimler yoluyla, otomatik yöntemlerle toplanır.</p>
@@ -92,10 +86,10 @@
       <tr><th>Veri Türü</th><th>Hesap Silindiğinde</th><th>Saklama Süresi</th></tr>
       <tr><td>Profil (kimlik, iletişim, onay kaydı)</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
       <tr><td>Favoriler</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
-      <tr><td>Koy önerileri ve fotoğraflar</td><td>Yayımlanmış öneriler rehber içeriği olarak kalabilir; talep üzerine kaldırılır <strong>[DANIŞMAN: teyit]</strong></td><td><strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
-      <tr><td>İşletme ve değişiklik talepleri</td><td>Hesaba bağlı değilse etkilenmez; talep üzerine silinir</td><td>Talep sonuçlandıktan sonra <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
-      <tr><td>Kalabalık raporları (anonim; hesaba bağlı değildir)</td><td>Etkilenmez — kimlikle ilişkilendirilmez</td><td>Anonim istatistik olarak <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
-      <tr><td>Satın alma kayıtları (abonelik durumu)</td><td>Profil kaydıyla silinir; Apple/RevenueCat kayıtları kendi politikalarına tabidir</td><td>Yasal yükümlülükler saklı kalmak üzere <strong>[DANIŞMAN: süre önerisi]</strong></td></tr>
+      <tr><td>Koy önerileri ve fotoğraflar</td><td>Yayımlanmış öneriler rehber içeriği olarak kalabilir; talep üzerine kaldırılır</td><td>Yayımlandığı sürece; talep üzerine silinir (yayımlanmayan öneriler değerlendirme sonrası veya hesap silindiğinde silinir)</td></tr>
+      <tr><td>İşletme ve değişiklik talepleri</td><td>Hesaba bağlı değilse etkilenmez; talep üzerine silinir</td><td>Talebin sonuçlandırılmasından sonra en fazla 1 yıl</td></tr>
+      <tr><td>Kalabalık raporları (anonim; hesaba bağlı değildir)</td><td>Etkilenmez — kimlikle ilişkilendirilmez</td><td>Anonim olduğundan istatistiksel amaçla süresiz saklanabilir</td></tr>
+      <tr><td>Satın alma kayıtları (abonelik durumu)</td><td>Profil kaydıyla silinir; Apple/RevenueCat kayıtları kendi politikalarına tabidir</td><td>Uygulama tarafında profil ile silinir; ödeme/fatura kayıtları Apple nezdinde ilgili mali mevzuattaki süreler boyunca saklanır</td></tr>
     </table>
 
     <h2>6. KVKK m.11 Kapsamındaki Haklarınız</h2>
@@ -113,8 +107,8 @@
     <h2>7. Başvuru</h2>
     <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak aşağıdaki yöntemlerle iletebilirsiniz:</p>
     <ul>
-      <li><strong>E-posta:</strong> <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> (Uygulama içindeki Profil &gt; Gizlilik bölümünden hazır şablonla da ulaşabilirsiniz),</li>
-      <li><strong>Yazılı başvuru (posta):</strong> <strong>[DANIŞMAN: tebligat adresi]</strong>.</li>
+      <li><strong>E-posta:</strong> Sistemimizde kayıtlı e-posta adresinizi kullanarak <a href="mailto:emre@pimrobotics.com">emre@pimrobotics.com</a> adresine (Uygulama içindeki Profil &gt; Gizlilik bölümünden hazır şablonla da ulaşabilirsiniz),</li>
+      <li><strong>Diğer yöntemler:</strong> Güvenli elektronik imza, mobil imza ya da kayıtlı elektronik posta (KEP) yoluyla; ıslak imzalı yazılı başvuru yapmak isterseniz tebligat adresimizi yukarıdaki e-posta üzerinden talep edebilirsiniz.</li>
     </ul>
     <p>Başvurunuz, niteliğine göre en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.</p>
   </div>
