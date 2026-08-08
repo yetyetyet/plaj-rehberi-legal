@@ -31,7 +31,7 @@
 <div class="wrap">
   <div class="eyebrow">Kıyı Rehberi</div>
   <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
-  <div class="meta">6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca · Son güncelleme: 9 Temmuz 2026</div>
+  <div class="meta">6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca · Son güncelleme: 9 Ağustos 2026 · <a href="kvkk-aydinlatma-en.html">English version</a></div>
 
   <div class="card">
     <h2>1. Veri Sorumlusu</h2>
@@ -52,8 +52,23 @@
       </tr>
       <tr>
         <td>İşlem güvenliği (cihaz tanımlayıcısı, şifre özeti, oturum bilgileri, kayıt zamanları)</td>
-        <td>Kötüye kullanımın önlenmesi (gönderim sıklığı sınırı), hizmetin güvenliği ve kararlılığı. Cihaz tanımlayıcısı kimlik verilerinizden ayrı tutulur ve kimliğinizle ilişkilendirilmez</td>
+        <td>Kötüye kullanımın önlenmesi (gönderim sıklığı sınırı), hizmetin güvenliği ve kararlılığı. Kalabalık raporları kimliğinizle birlikte gösterilmez; cihaz tanımlayıcısı, bildirim kaydı gibi hesaba bağlı işlevlerde de kullanıldığından sunucu tarafında hesabınızla eşleştirilebilir</td>
         <td>Meşru menfaat (m.5/2-f)</td>
+      </tr>
+      <tr>
+        <td>Değerlendirmeler ve kamusal profil (puan, yorum metni, değerlendirme fotoğrafları, görünen ad, kullanıcı adı, profil fotoğrafı, hakkımda metni, katkı rozetleri, beğeniler, isteğe bağlı favori paylaşımı)</td>
+        <td>Topluluk özelliğinin sunulması; içeriğin ön moderasyondan geçirilmesi ve onaylanması hâlinde kamusal profil bilgileriyle birlikte Uygulama içinde <strong>herkese açık</strong> yayımlanması; beğeni ve rozet sayaçlarının hesaplanması</td>
+        <td>Açık rıza (içeriği yayımlanmak üzere göndermeniz; m.5/1) ve ilgili kişinin kendisi tarafından alenileştirilmesi (m.5/2-d)</td>
+      </tr>
+      <tr>
+        <td>Bildirim verileri (bildirim jetonu, cihaz tanımlayıcısı, uygulama dili, saat dilimi)</td>
+        <td>İzin verdiğiniz bildirimlerin gönderilmesi</td>
+        <td>Açık rıza (cihaz bildirim izni; m.5/1); izin geri alındığında kayıt pasifleştirilir</td>
+      </tr>
+      <tr>
+        <td>Kullanım olayları (rastgele cihaz tanımlayıcısı, önceden tanımlı olay adı, kaynak ekran, uygulama sürümü; kullanıcı kimliği içermez)</td>
+        <td>Uygulama kullanımının ölçülmesi ve ürün geliştirme</td>
+        <td>Meşru menfaat (m.5/2-f); kayıtlar kimlik verisi içermez ve 90 gün sonra silinir</td>
       </tr>
       <tr>
         <td>Kullanıcı içeriği (koy önerileri: ad, konum, açıklama, fotoğraflar; ödül kaydı)</td>
@@ -74,11 +89,11 @@
     <p>Ödeme kartı bilgileriniz tarafımızca işlenmez; ödemeler Apple tarafından gerçekleştirilir.</p>
 
     <h2>3. Kişisel Verilerin Aktarılması</h2>
-    <p>Verileriniz; barındırma, kimlik doğrulama ve abonelik yönetimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple) aktarılmaktadır. Abonelik durumunuzun hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir.</p>
-    <p>Yurt dışına aktarım KVKK m.9 kapsamında yürütülür: bu hizmet sağlayıcıların bulunduğu ülkeler bakımından Kişisel Verileri Koruma Kurulu'nca verilmiş bir yeterlilik kararı bulunmadığından aktarım, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Hesap gerektirmeyen akışlarda (kalabalık raporu, işletme/değişiklik talebi) işlenen veriler ise ya kimliğinizle ilişkilendirilmez (kalabalık raporları) ya da ilgili formu göndermeniz suretiyle vermiş olduğunuz açık rızaya dayanılarak bu sunuculara aktarılır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
+    <p>Verileriniz; barındırma, kimlik doğrulama, abonelik yönetimi, bildirim iletimi ve e-posta gönderimi hizmetlerinin sağlanması amacıyla, sunucuları <strong>yurt dışında bulunan</strong> hizmet sağlayıcılara (Supabase, RevenueCat, Apple, Resend) aktarılmaktadır. Abonelik durumunuzun hesabınızla eşleştirilebilmesi için kullanıcı hesap tanımlayıcınız (user ID) RevenueCat'e iletilir. Bildirim izni verdiyseniz bildirim jetonunuz, bildirimlerin iletilmesi amacıyla Apple'ın bildirim altyapısı (APNs) üzerinden işlenir. Koy önerinizin onaylanması gibi durumlarda size e-posta gönderilebilmesi için e-posta adresiniz ve adınız, e-posta gönderim sağlayıcımız Resend'e iletilir.</p>
+    <p>Yurt dışına aktarım KVKK m.9 kapsamında yürütülür: bu hizmet sağlayıcıların bulunduğu ülkeler bakımından Kişisel Verileri Koruma Kurulu'nca verilmiş bir yeterlilik kararı bulunmadığından aktarım, kayıt sırasında alınan <strong>açık rızanıza</strong> dayanır. Hesap gerektirmeyen akışlarda (kalabalık raporu, işletme/değişiklik talebi) işlenen veriler ise ya doğrudan kimlik bilgisi içermeden işlenir (kalabalık raporları; yukarıda açıklandığı üzere cihaz tanımlayıcısı üzerinden sunucu tarafında dolaylı eşleştirme mümkündür) ya da ilgili formu göndermeniz suretiyle vermiş olduğunuz açık rızaya dayanılarak bu sunuculara aktarılır. Açık rıza vermemeniz hâlinde hesap gerektiren özellikler kullanılamaz; Uygulamanın hesapsız kullanılabilen bölümlerinden yararlanmaya devam edebilirsiniz.</p>
 
     <h2>4. Toplama Yöntemi</h2>
-    <p>Kişisel verileriniz; Uygulama üzerindeki kayıt ve kullanım süreçlerinde, cihazınızın sağladığı izinler çerçevesinde (konum servisi) ve satın alma altyapılarından gelen bildirimler yoluyla, otomatik yöntemlerle toplanır.</p>
+    <p>Kişisel verileriniz; Uygulama üzerindeki kayıt ve kullanım süreçlerinde, cihazınızın sağladığı izinler çerçevesinde (konum servisi, bildirim izni, fotoğraf galerisi erişimi) ve satın alma altyapılarından gelen bildirimler yoluyla, otomatik yöntemlerle toplanır.</p>
 
     <h2>5. Saklama</h2>
     <p>Verileriniz, işlenme amaçlarının gerektirdiği süre ve ilgili mevzuatta öngörülen zamanaşımı süreleri boyunca saklanır; süre sonunda silinir, yok edilir veya anonim hâle getirilir. Veri türü bazında saklama koşulları:</p>
@@ -88,7 +103,11 @@
       <tr><td>Favoriler</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
       <tr><td>Koy önerileri ve fotoğraflar</td><td>Yayımlanmış öneriler rehber içeriği olarak kalabilir; talep üzerine kaldırılır</td><td>Yayımlandığı sürece; talep üzerine silinir (yayımlanmayan öneriler değerlendirme sonrası veya hesap silindiğinde silinir)</td></tr>
       <tr><td>İşletme ve değişiklik talepleri</td><td>Hesaba bağlı değilse etkilenmez; talep üzerine silinir</td><td>Talebin sonuçlandırılmasından sonra en fazla 1 yıl</td></tr>
-      <tr><td>Kalabalık raporları (anonim; hesaba bağlı değildir)</td><td>Etkilenmez — kimlikle ilişkilendirilmez</td><td>Anonim olduğundan istatistiksel amaçla süresiz saklanabilir</td></tr>
+      <tr><td>Kalabalık raporları (hesaba bağlı değildir; cihaz tanımlayıcısı içerir)</td><td>Etkilenmez; rapor içeriği kimlikle birlikte gösterilmez</td><td>90 gün sonra silinir</td></tr>
+      <tr><td>Değerlendirmeler (puan, yorum metni, fotoğraflar) ve beğeniler</td><td>Tamamen silinir (yayımlanmış olanlar dâhil)</td><td>Siz silene veya hesabınız silinene kadar</td></tr>
+      <tr><td>Kamusal profil (görünen ad, kullanıcı adı, profil fotoğrafı, hakkımda, favori paylaşım tercihi)</td><td>Silinir</td><td>Hesap aktif olduğu sürece</td></tr>
+      <tr><td>Bildirim verileri (bildirim jetonu, cihaz tanımlayıcısı, dil, saat dilimi)</td><td>Silinir</td><td>İzin geri alınınca pasifleştirilir; hesap silinince silinir</td></tr>
+      <tr><td>Kullanım olayları (rastgele cihaz tanımlayıcısı, olay adı, uygulama sürümü)</td><td>Etkilenmez; kullanıcı kimliği içermez</td><td>90 gün sonra silinir (kurulum kaydı istatistik amaçlı saklanır; kimlik bilgisi içermez)</td></tr>
       <tr><td>Satın alma kayıtları (abonelik durumu)</td><td>Profil kaydıyla silinir; Apple/RevenueCat kayıtları kendi politikalarına tabidir</td><td>Uygulama tarafında profil ile silinir; ödeme/fatura kayıtları Apple nezdinde ilgili mali mevzuattaki süreler boyunca saklanır</td></tr>
     </table>
 
